@@ -1,0 +1,32 @@
+.transitions (@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+
+.make-button {
+  border-radius: 3px;
+  font-size: 2rem;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.6rem 3rem;
+  font-weight: 500;
+  transition: 0.5s;
+  line-height: 3.6rem;
+}
+
+.vertical-align(@position:relative){
+  position: @position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.box_shadow(){
+
+}
+
+

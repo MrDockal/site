@@ -1,0 +1,245 @@
+#navbar {
+  background: transparent;
+  color: @yellow;
+  height: 6.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: @navbar-bg;
+  //  background: linear-gradient(to bottom, rgba(0, 0, 0, 1),  rgba(0, 0, 0, 0));
+
+  //rozbalovac mobilniho menu == hamburger
+  .toggle-menu {
+    position: absolute;
+    right: 0;
+    z-index: 10001;
+    //    padding: .6rem 1rem;
+    //    margin: 0.9rem;
+    border-radius: 2px;
+    //    border: solid thin @yellow;
+    cursor: pointer;
+    //    .icon-bar {
+    //      background-color: @yellow;
+    //      display: block;
+    //      width: 22px;
+    //      height: 2px;
+    //      margin: 5px 0;
+    //      border-radius: 1px;
+    //    }
+  }
+
+  ///položky v menu
+  ul {
+    display: none;
+    text-align: center;
+    padding: 0;
+    margin: 0 -2rem;
+    right: 0;
+
+    li {
+      &:first-child {
+        margin: 6.4rem 0 0 0;
+      }
+      padding: 0;
+      margin: 0;
+      display: block;
+      a {
+        color: @yellow;
+        font-size: 2rem;
+        line-height: 6.5rem;
+        font-weight: 400;
+        display: block;
+        padding: 0 1.3rem;
+        background: @navbar-bg;
+        transition: 0.5s;
+      }
+
+      //zvyrazneny prvek v menu
+      a.button {
+
+
+        line-height: 4.5rem;
+        //        background: @brown;
+        color: @yellow;
+        font-weight: 400;
+        &:hover {
+          background: fade(@brown, 50);
+        }
+
+        @media (min-width: @screen-xs-max) {
+          border: solid 2px;
+          border-radius: 3px;
+        }
+      }
+
+      //aktivni polozka v menu
+      a.active {
+        color: white;
+      }
+
+    }
+  }
+
+  // zobrazeni mobilniho menu + animace
+  .menu-open {
+    display: block;
+    li {
+      .animated;
+      .fadeInUp;
+      .animation-duration(0.3s);
+
+      &:nth-child(1) {
+      }
+
+      &:nth-child(2) {
+        .animation-delay(.1s);
+      }
+
+      &:nth-child(3) {
+        .animation-delay(.15s);
+      }
+
+      &:nth-child(4) {
+        .animation-delay(.2s);
+      }
+
+      &:nth-child(5) {
+        .animation-delay(.25s);
+      }
+
+      &:nth-child(6) {
+        .animation-delay(.3s);
+      }
+    }
+  }
+
+  //skryti mobilniho menu + animace
+  .menu-closed {
+    li {
+      .animated;
+      .zoomOut;
+
+      &:nth-child(1) {
+        .animation-delay(.4s);
+      }
+
+      &:nth-child(2) {
+        .animation-delay(.35s);
+      }
+
+      &:nth-child(3) {
+        .animation-delay(.3s);
+      }
+
+      &:nth-child(4) {
+        .animation-delay(.25s);
+      }
+
+      &:nth-child(5) {
+        .animation-delay(.20s);
+      }
+
+      &:nth-child(6) {
+        .animation-delay(.1s);
+      }
+    }
+  }
+
+  .absolute-left {
+    left: 0;
+    position: absolute;
+  }
+;
+
+  //logo
+  .logo {
+    line-height: 6.5rem;
+    padding: 0 2rem;
+    img {
+      //      width: 11.1rem;
+      //      height: 5.2rem;
+      position: relative;
+      width: 23.6rem;
+    }
+  }
+
+  //pripnute menu
+  &.fixed {
+    @media (min-width: @screen-xs-max) {
+      opacity: 0;
+    }
+    position: fixed;
+    background: @navbar-bg;
+    height: 6.5rem;
+    ul {
+      margin: 0;
+      li {
+        a {
+          line-height: 6.1rem;
+        }
+        .button {
+          line-height: 4.6rem;
+        }
+      }
+    }
+
+    .logo {
+      line-height: 6.5rem;
+    }
+  }
+
+  //desktop verze menu
+  @media (min-width: @screen-xs-max) {
+    background: transparent;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+
+    height: 15rem;
+    position: absolute;
+    .logo {
+      line-height: 10rem;
+      padding: 0;
+      img {
+        //        width: 22.1rem;
+        //        height: 4.2rem;
+        position: relative;
+        height: auto;
+      }
+    }
+
+    ul {
+      text-align: right;
+      margin: 2.5rem 0;
+      display: block !important;
+      li {
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        &:first-child {
+          margin: 0;
+        }
+        display: inline-block;
+        a {
+          font-size: 2rem;
+          line-height: 5rem;
+          display: block;
+          padding: 0 1.3rem;
+          background: transparent;
+
+          &:hover {
+            opacity: 1 !important;
+          }
+        }
+      }
+      &:hover {
+        a {
+          opacity: 0.4
+        }
+
+      }
+    }
+  }
+
+}

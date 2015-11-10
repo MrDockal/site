@@ -1,0 +1,66 @@
+/* background setup */
+.background {
+  background-repeat: no-repeat;
+  /* custom background-position */
+  background-position: 50% 50%;
+  /* ie8- graceful degradation */
+  background-position: 50% 50% \9  !important;
+
+}
+
+/* fullscreen-bg setup */
+html, body {
+  /* give this to all tags from html to .fullscreen-bg */
+  height: 100%;
+}
+
+.content-a {
+  background: transparent;
+  width: 100%;
+  min-height: 100%;
+  //  transition: background-size background-position 999s;
+  //  @media (min-width: @screen-xs-max) {
+  height: 100%;
+  overflow: hidden;
+  //  }
+}
+
+.fullscreen-bg,
+{
+  background: transparent;
+  width: 100%;
+//  min-height: 100rem;
+  height: 100%;
+//  transition: 100s;
+  //  transition: background-size background-position 999s;
+  @media (min-width: @screen-xs-max) {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.not-fullscreen-bg,
+.not-fullscreen-bg .content-a,
+.fullscreen-bg.not-overflow,
+.fullscreen-bg.not-overflow .content-a {
+  @media (min-width: @screen-xs-max) {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+/* content centering styles */
+.content-a {
+  display: table;
+}
+
+.content-b {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.not-fullscreen-bg {
+  height: 50%;
+}

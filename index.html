@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css"/>
+    <link type="text/css" rel="stylesheet" href="bower_components/owl-carousel/owl-carousel/owl.carousel.css"/>
+    <link type="text/css" rel="stylesheet" href="bower_components/owl-carousel/owl-carousel/owl.theme.css"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<div id="navbar" class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <div class="nav-center">
+                <ul class="hide-on-med-and-down">
+                    <li id="new-beer-nav"><a href="collapsible.html">Nová piva</a></li>
+                    <li id="how-it-works-nav"><a href="mobile.html">Jak to funguje</a></li>
+                    <li id="join-us-nav"><a href="sass.html">Zapojte se</a></li>
+                    <li id="quality-insurance-nav"><a href="badges.html">Kvalita</a></li>
+                </ul>
+            </div>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="sass.html">Sass</a></li>
+                <li><a href="badges.html">Components</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluid">
+    <div class="row first-row">
+        <div class="top">
+            <div class="parallax-container">
+                <div class="parallax fullscreen-bg background">
+                    <img src="images/wheat.jpg"/>
+                    <div class="top-text">
+                        <div class="top-text-container">
+                            <!--<h1>Každý měsíc ochutnávej pivo s komunitou <span class="orange-text">Vyzkoušej-pivo.cz</span>-->
+                            <h1>Vítejte na stránkách <span class="orange-text">OchutnejPivo.cz</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row stripe waypoint" id="new-beer">
+        <div class="col-md-10 col-md-offset-1">
+            <h2 class="center-align">Poznávejte nová piva!</h2>
+
+            <h3 class="center-align">Pravidelně ochutnávejte piva z Českých mikro pivovarů</h3>
+
+            <div>Díky naší službě dostanete piva až domuasd asd asd asd asd</div>
+            <div>Díky naší službě dostanete piva až domuasd asd asd asd asd</div>
+            <div>Díky naší službě dostanete piva až domuasd asd asd asd asd</div>
+        </div>
+    </div>
+
+
+    <div class="row stripe waypoint" id="how-it-works">
+        <h2 class="center-align">Jak to funguje?</h2>
+
+        <div class="col-md-10 col-md-offset-1">
+            <div class="col-sm-4 col-xs-12 boxes">
+                <div class="box">
+                    <div class="box-content">
+                        <div>Objednejte</div>
+                        <p><i class="large material-icons">shopping_cart</i></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 boxes">
+                <div class="box">
+                    <div class="box-content">
+                        <div>Vyčkejte na zásilku</div>
+                        <p><i class="large material-icons">schedule</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12 boxes">
+                <div class="box">
+                    <div class="box-content">
+                        <div>Hodnoťte</div>
+                        <p><i class="large material-icons">thumb_up</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row stripe waypoint" id="join-us">
+        <h2 class="center-align">Zapojte se!</h2>
+
+        <div class="col-md-10 col-md-offset-1">
+            <div class="center-align">
+                Zadejte vaši emailovou adresu a získejte první objednáky se
+                <span class="orange-text">slevou 20%</span>
+            </div>
+            <div class="row">
+                <div class="input-field col-md-6 col-md-offset-3">
+                    <div class="row">
+                        <form>
+                            <div class="col-xs-8 col-xs-offset-2">
+                                <input id="email" required type="email" class="center-align validate">
+                                <label for="email" class="center-align">Email:</label>
+                            </div>
+                            <div class="col-xs-8 col-xs-offset-2 center-align">
+                                <button type="submit" class="waves-effect waves-light btn">
+                                    <i class="material-icons right">send</i>
+                                    Odeslat
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row stripe waypoint" id="quality-insurance">
+        <h2 class="center-align">Záruka kvality</h2>
+
+        <div class="col-md-10 col-md-offset-1">
+            <div class="center-align">
+                Naše <span class="orange-text">dodavatele piv</span> si pečlivě vybíráme.
+                Po celou dobu, než se k Vám pivo dostane, dbáme na<span class="orange-text"> nejlepší skladovací</span>
+                podmínky.
+            </div>
+        </div>
+
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item"><img src="images/1.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="images/2.jpg" alt="GTA V"></div>
+            <div class="item"><img src="images/3.jpg" alt="Mirror Edge"></div>
+            <div class="item"><img src="images/4.jpg" alt="Mirror Edge"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js"></script>
+<script type="text/javascript" src="bower_components/owl-carousel/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="bower_components/waypoints/lib/noframework.waypoints.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.parallax').parallax({
+            dataFrictionY: "0.80",
+            positionY: "-250px"
+        });
+        var email = $("#email");
+        $(".button-collapse").sideNav();
+        $("#owl-demo").owlCarousel({
+
+            autoPlay: 6000, //Set AutoPlay to 3 seconds
+
+            items: 3,
+            itemsDesktop: [1199, 3],
+            itemsDesktopSmall: [979, 3]
+
+        });
+
+        function setActive(element) {
+            var navs = $(".nav-wrapper").find('li');
+            for (var i = 0; i < navs.length; i++) {
+                $(navs[i]).removeClass("active");
+                if (navs[i]["id"] == element["id"] + "-nav") {
+                    $("#" + element["id"] + "-nav").addClass("active");
+                }
+            }
+//            console.log(navs);
+        }
+
+        var waypointElements = document.getElementsByClassName("waypoint");
+        for (var i = 0; i < waypointElements.length; i++) {
+            new Waypoint({
+                element: waypointElements[i],
+                handler: function (direction) {
+                    console.log(direction, this.element);
+                    setActive(this.element);
+                },
+                offset: 50
+            })
+        }
+
+
+    });
+</script>
+</body>
+</html>
