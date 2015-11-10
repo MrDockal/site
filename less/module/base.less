@@ -25,43 +25,13 @@ body, html {
   box-shadow: 0 0;
   background-color: @orange-text;
 &:hover{
-  background-color: #ff8828;
+  background-color: @orange-text-hover;
 }
 }
 
-nav{
-//  opacity: 0.9;
-  font-weight: 300;
-  box-shadow: 0 1px 5px #5a5a5a;
-  a{
-    font-size: 0.75em !important;
-    color: #000000 !important;
-    &:hover,&:focus{
-      text-decoration: none;
-      color: #000000;
-    }
-  }
-  .nav-wrapper{
-    background-color: white;
-//    border-bottom: 2px solid #eeecec;
-  }
-  .nav-center{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    ul{
-      display: inline-block;
-    }
-  }
-}
 
-.brand-logo{
-  margin: 5px !important;
-  background: url(/images/logo.jpg) no-repeat;
-  background-size: cover;
-  height: 53px;
-  width: 53px;
-}
+
+
 
 .my-container{
   position: relative;
@@ -81,53 +51,6 @@ h3{
 .container-fluid{
   .row{
     clear: both;
-
   }
 }
 
-.stripe{
-  &:nth-child(2n) {
-    background-color: @page-bg;
-  }
-  h2{
-    margin-top: 0;
-  }
-  padding: 2em 0 2em 0;
-}
-
-
-.boxes{
-  text-align: center;
-  &:nth-child(1) {
-    &:before{
-      margin: 1.8em 0 1.8em 0;
-      font-size: 1.3em;
-      content: "1";
-    }
-  }
-  &:nth-child(2) {
-    &:before{
-      margin: 1.8em 0 1.8em 0;
-      font-size: 1.3em;
-      content: "2";
-    }
-  }
-  &:nth-child(3) {
-    &:before{
-      margin: 1.8em 0 1.8em 0;
-      font-size: 1.3em;
-      content: "3";
-    }
-  }
-  .box{
-    margin: 0 auto;
-    border: solid ;
-//    margin: 0.2em 0.2em 0.2em 0.2em;
-    border-radius: 0.4em;
-    height: 10em;
-    width: 10em;
-    .box-content{
-      .vertical-align();
-    }
-  }
-}
